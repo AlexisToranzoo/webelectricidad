@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.btn-whatsapp {
+    border-radius: 50px;
+    background-color: #25D366;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+.full-width-img {
+    width: 100%;
+    height: auto;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Ajusta esta altura según lo necesario */
+}
+.cropped-img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-25%); /* Ajusta este valor para centrar la imagen en la parte superior */
+}
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
+    pointer-events: none; /* Para asegurarse de que la superposición no interfiera con los elementos interactivos debajo */
+}
