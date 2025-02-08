@@ -1,36 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .btn-whatsapp {
     border-radius: 50px;
     background-color: #25D366;
     color: white;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    padding: 15px 30px; /* Aumenta el tamaño del botón */
 }
+
 .btn-whatsapp:hover {
     background-color: #128C7E;
+    transform: scale(1.05);
 }
+
 .full-width-img {
     width: 100%;
     height: auto;
 }
+
 .image-container {
     position: relative;
     overflow: hidden;
-    height: 300px; /* Ajusta esta altura según lo necesario */
+    height: auto;
+    max-height: 300px; /* Asegura una altura máxima */
 }
+
 .cropped-img {
     width: 100%;
     height: auto;
-    transform: translateY(-25%); /* Ajusta este valor para centrar la imagen en la parte superior */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    object-position: center; /* Centra la imagen verticalmente */
 }
+
 .fade-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
-    pointer-events: none; /* Para asegurarse de que la superposición no interfiera con los elementos interactivos debajo */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 10%);
+    pointer-events: none;
+}
+
+.bg-yellow {
+    background-color: #FFC107;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.border-yellow {
+    border: 2px solid #FFC107; /* Bordes en amarillo más intenso */
+}
+
+.text-yellow {
+    color: #FFC107; /* Color de texto amarillo más intenso */
+}
+
+.card-carousel {
+    max-width: 400px;
+}
+
+.card-img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info-banner {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.electric-icon {
+    width: 100px;
+    height: 100px;
+    fill: #FFC107; /* Color amarillo para el icono */
+    margin-top: 10px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-carousel {
+        margin-top: 20px;
+        margin-bottom: 20px; /* Añadido margin-bottom */
+    }
+    
+    .image-container {
+        max-height: none; /* Elimina la altura máxima en dispositivos móviles */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+    
+    .fade-overlay {
+        height: 100%; /* Asegura que el overlay se mantenga visible */
+    }
 }

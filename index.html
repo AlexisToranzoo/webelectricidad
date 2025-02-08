@@ -6,11 +6,15 @@
     <title>Electricidad a Domicilio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="description" content="Somos un emprendimiento innovador de electricidad domiciliaria en Córdoba Capital.">
+    <meta name="keywords" content="Electricidad, Domicilio, Córdoba, Servicios Eléctricos">
+    <meta name="author" content="Tu Nombre o Empresa">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-yellow fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="icono.jpg" width="30" height="30" alt="Icono"> Electricidad
+            <img src="icono.jpg" width="30" height="30" alt="Icono de Electricidad"> Electricidad
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,32 +22,106 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#carouselSection">Trabajos Realizados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#quienesSomosSection">Quiénes Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contactoSection">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <div class="image-container">
         <img src="img/electricistaarreglando.webp" alt="Persona arreglando un sistema eléctrico" class="full-width-img cropped-img">
         <div class="fade-overlay"></div>
     </div>
+
     <div class="container mt-5">
-        <h1>Bienvenido a Electricidad a Domicilio</h1>
-        <p>Ofrecemos servicios eléctricos profesionales y rápidos a domicilio.</p>
         <a href="https://wa.me/xxxxxxxxxxx" class="btn btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> Comunícate con nosotros por WhatsApp, toca este botón
+            <i class="fab fa-whatsapp text-white"></i> Comunícate con nosotros por WhatsApp, toca este botón
         </a>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
+    
+    <!-- Trabajos Realizados -->
+    <div id="carouselSection" class="d-flex justify-content-center mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide card-carousel mr-3" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 card-img" src="img/arreglo1.jpg" alt="Arreglo 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 card-img" src="img/arreglo2.jpg" alt="Arreglo 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 card-img" src="img/arreglo3.jpeg" alt="Arreglo 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 card-img" src="img/arreglo4.jpg" alt="Arreglo 4">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 card-img" src="img/arreglo5.jpg" alt="Arreglo 5">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 card-img" src="img/arreglo6.jpg" alt="Arreglo 6">
+                </div>
+            </div>
+            <!-- Flechas de navegación ocultas -->
+            <a class="carousel-control-prev d-none" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next d-none" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <div class="info-banner border-yellow p-4">
+            <h3 class="text-yellow">Ejemplos de lo que hacemos</h3>
+            <img src="https://www.svgrepo.com/show/283216/electric-electricity.svg" alt="Icono de electricidad" class="electric-icon">
+        </div>
+    </div>
+
+    <!-- Quiénes Somos -->
+    <div id="quienesSomosSection" class="container mt-5 bg-yellow">
+        <h2>Quiénes Somos</h2>
+        <p>Somos un emprendimiento innovador de electricidad domiciliaria en Córdoba Capital, Argentina. Nos especializamos en ofrecer soluciones eléctricas rápidas y eficientes para hogares y negocios, utilizando tecnología de punta y materiales de la más alta calidad. Nuestro equipo de profesionales capacitados está comprometido con la excelencia y la satisfacción del cliente. Trabajamos con pasión y dedicación para garantizar que tu instalación eléctrica sea segura, confiable y eficiente. ¡Confía en nosotros para todas tus necesidades eléctricas!</p>
+    </div>
+
+    <!-- Contacto -->
+    <div id="contactoSection" class="container mt-5">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/mbldkzav" method="POST">
+            <div class="form-group">
+                <label for="email">Tu correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" required>
+            </div>
+            <div class="form-group">
+                <label for="consulta">Consulta:</label>
+                <textarea class="form-control" id="consulta" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" async></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" async></script>
+    <script src="script.js" async></script>
 </body>
 </html>
